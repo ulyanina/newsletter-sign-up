@@ -1,0 +1,20 @@
+.form__column {
+   position: relative;
+   input.error {
+      border: 1px solid $color-error;
+      background-color: rgba(255, 97, 85, 0.15);
+      color: $color-error;
+      font-size: 16px;
+      font-weight: 400;
+      font-family: RobotoFlex;
+      text-align: left;
+   }
+   #email-error {
+      color: $color-error;
+      font-size: 12px;
+      font-weight: 700;
+      position: absolute;
+      right: 0;
+      bottom: 150px;
+   }
+}

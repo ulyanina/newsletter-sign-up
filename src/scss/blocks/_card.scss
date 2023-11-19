@@ -71,13 +71,18 @@
     &__column {
         display: flex;
         flex-direction: column;
+        position: relative;
         & input {
+            padding: 16px 24px;
             text-align: center;
             border-radius: 8px;
             border: 1px solid rgba(25, 24, 43, 0.25);
             margin-bottom: 24px;
             font-size: 16px;
             font-weight: 400;
+            &:focus {
+                text-align: left;
+            }
         }
         & input,
         button {
