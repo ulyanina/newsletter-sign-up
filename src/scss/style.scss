@@ -1,20 +1,31 @@
-// @import "libs/null";
-// @import "libs/fonts";
+@import "libs/null";
+@import "libs/fonts";
 // @import "libs/animate";
+
+@import "base/variables";
 
 body {
    height: 100%;
 }
 .wrapper {
-   // color: $dark-navy;
-
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   font-family: Roboto;
+   color: $color-dark-navy;
    min-height: 100%;
    overflow: hidden;
+   background-color: #36384d;
 }
-.container {
-   max-width: 1046px; //? +30px, если контейнеру устанавливаем padding: 0 15px;
-   margin: o auto;
-   padding: 0 15px;
+
+.footer {
+   color: #fff;
+   margin-bottom: 20px;
+   & a {
+      color: #fff;
+      text-decoration: underline;
+   }
 }
 
 @import "blocks/card";
