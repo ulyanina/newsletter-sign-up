@@ -15,7 +15,11 @@ function validateForms(form) {
     },
   });
 }
-
 validateForms('#content-input');
 
 
+const submitBtn = document.querySelector('#submit-button');
+
+submitBtn.addEventListener('click', () => {
+  
+})

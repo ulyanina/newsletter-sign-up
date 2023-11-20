@@ -18,3 +18,4 @@ function validateForms(form) {
 
 validateForms('#content-input');
 
+
