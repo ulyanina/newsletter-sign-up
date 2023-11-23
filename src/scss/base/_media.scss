@@ -1,10 +1,69 @@
-@media (max-width: 1200px) {
-}
 @media (max-width: 991px) {
+   .card {
+      width: 95vw;
+   }
+   .content {
+      &__heading {
+         font-size: calc(40px + 16 * ((100vw - 320px) / (1440 - 320)));
+      }
+   }
+
+   .form {
+      & input,
+      button {
+         width: calc(327px + 49 * ((100vw - 320px) / (1440 - 320)));
+      }
+   }
 }
 @media (max-width: 768px) {
+   .card {
+      width: 100vw;
+      height: 100vh;
+      border-radius: 0;
+      &__wrapper {
+         width: 100vw;
+         flex-wrap: wrap-reverse;
+         justify-content: center;
+         padding: 0;
+      }
+      &__content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         padding: 40px 40px 40px;
+         // flex: 1 1 auto;
+      }
+      &__img {
+         background: url("../../img/illustration-sign-up-mobile.svg") 100% 100% / cover no-repeat;
+         border-radius: 0 0 16px 16px;
+         width: 100%;
+         height: 284px;
+      }
+   }
+   .footer,
+   .footer a {
+      color: $color-dark-navy;
+   }
 }
 @media (max-width: 576px) {
+   .success {
+      &__wrapper {
+         border-radius: 0;
+         width: 100vw;
+         height: 100vh;
+         padding: 149px 24px 40px;
+      }
+      &__heading {
+         font-size: calc(40px + 16 * ((100vw - 320px) / (1440 - 320)));
+      }
+      &__text {
+         margin-bottom: 263px;
+      }
+      &__button {
+         margin: 0 auto;
+         width: calc(327px + 49 * ((100vw - 320px) / (1440 - 320)));
+      }
+   }
 }
 @media (max-width: 320px) {
 }

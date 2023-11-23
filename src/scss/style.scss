@@ -16,11 +16,22 @@ body {
    min-height: 100%;
    overflow: hidden;
    background-color: #36384d;
+   position: relative;
+}
+
+.hidden{
+   display: none;
 }
 
 .footer {
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 20px;
    color: #fff;
    margin-bottom: 20px;
+   width: 500px;
+   text-align: center;
    & a {
       color: #fff;
       text-decoration: underline;
@@ -30,5 +41,4 @@ body {
 @import "blocks/card";
 @import "blocks/error";
 @import "blocks/success";
-
-// @import "base/media";
+@import "base/media";

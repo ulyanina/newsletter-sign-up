@@ -15,11 +15,16 @@ function validateForms(form) {
     },
   });
 }
+
 validateForms('#content-input');
 
 
-const submitBtn = document.querySelector('#submit-button');
+const card = document.querySelector('#card'),
+  submitBtn = document.querySelector('#submit-button'),
+  successMessage = document.querySelector('#success-message'),
+  successBtn = document.querySelector('#success-button');
 
-submitBtn.addEventListener('click', () => {
-  
+submitBtn.addEventListener('submit', (e) => {
+  e.preventDefault();
+  console.log(e);
 })

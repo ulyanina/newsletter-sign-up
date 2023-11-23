@@ -19,3 +19,8 @@ function validateForms(form) {
 validateForms('#content-input');
 
 
+const card = document.querySelector('#card'),
+  submitBtn = document.querySelector('#submit-button'),
+  successMessage = document.querySelector('#success-message'),
+  successBtn = document.querySelector('#success-button');
+
